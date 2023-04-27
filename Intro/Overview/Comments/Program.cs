@@ -9,7 +9,10 @@ namespace Comments
         /// documentation: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags
         static void Main(string[] args)
         {
-
+            /// <summary>
+            /// This property always returns a value &lt; 1.
+            /// example of documentation
+            /// </summary>
             Console.WriteLine("Hello World!");
 
         }
