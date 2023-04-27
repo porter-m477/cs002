@@ -8,4 +8,4 @@ Due Date: 03/05/2023 06PM
     - Git commit -m "message"
     - Git push
 - Crear Git Pull-request desde la interfase de Github
-- Poder explicar su srcip a la clase
+- Poder explicar su script a la clase
