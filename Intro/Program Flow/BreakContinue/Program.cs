@@ -13,12 +13,20 @@ namespace BreakContinue
             {
                 // TODO: el continue statement se salta el resto del loop 
                 // hacia la siguiente iteracion (siesque hay una siguiente)
+                if (val >= 20 && val <= 30)
+                {
+                    continue;
+                }
 
 
                 // print
                 Console.WriteLine($"val es {val}");
 
                 // TODO: el break statement detiene el loop y sale
+                // if (val >= 40)
+                // {
+                //     break;
+                // }
 
             }
         }
