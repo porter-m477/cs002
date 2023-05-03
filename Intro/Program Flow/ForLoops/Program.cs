@@ -7,37 +7,37 @@ namespace ForLoops
         static void Main(string[] args)
         {
             int myVal = 15;
-            int[] nums = new int[] { 3, 14, 15, 92, 6 };
+            int[] nums = new int[] { 3, 4, 5 };
             string str = "Cadena de texto";
 
             // TODO: for loop basico
             // Console.WriteLine("Un for loop basico:");
             // for (int i = 0; i < myVal; i++)
             // {
-            //     Console.WriteLine("i is {0}", i);
+            //     Console.WriteLine("i es actualmente {0}", i);
             // }
 
-            Console.WriteLine();
+            // Console.WriteLine();
 
-            // TODO: foreach-in loop puede ser utilizado con secuancias
-            // Console.WriteLine("The foreach loop:");
+            // TODO: foreach-in loop puede ser utilizado con secuencias
+            // Console.WriteLine("Un foreach loop:");
             // foreach (int i in nums)
             // {
-            //     Console.WriteLine("i is {0}", i);
+            //     Console.WriteLine("i es actualmente {0}", i);
             // }
 
 
             // TODO: count the number of o's in the string
-            // var count = 0;
-            // foreach (char c in str)
-            // {
-            //     if (c == 'o')
-            //     {
-            //         count++;
+            var count = 0;
+            foreach (char c in str)
+            {
+                if (c == 'a')
+                {
+                    count++;
 
-            //     }
-            // }
-            // Console.WriteLine("counted {0} o chars", count);
+                }
+            }
+            Console.WriteLine("resultado de chars {0}", count);
 
         }
     }
