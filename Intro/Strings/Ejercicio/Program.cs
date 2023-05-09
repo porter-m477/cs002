@@ -26,13 +26,14 @@ namespace Ejercicio
                 Console.WriteLine("Cual es tu numero?");
                 string theGuess = Console.ReadLine();
 
-                // Usando el TryParse method para convertir el input en un numero
+                // Usando el TryParse para convertir el input en un numero
                 bool result = Int32.TryParse(theGuess, out guessNum);
 
                 // Que pasa si entra algo diferente a un numero
                 if (!result)
                 {
-                    Console.WriteLine("Hmmm, solo se aceptan numeros. Intenta de nuevo.");
+                    Console.WriteLine($"Solo se aceptan numeros. Saliste del juego. {guessCount} intentos");
+                    keepGoing = false;
                 }
                 else
                 {
