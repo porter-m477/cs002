@@ -8,6 +8,9 @@ void PrintWithPrefix(string thestr, string prefix)
 
 // TODO: Test con default parameters
 
+PrintWithPrefix("texto prueba", "*****");
+
 
 // TODO: Test con parametros individualizados
+PrintWithPrefix(thestr: "Hola string", prefix: ">>>>>>");
 

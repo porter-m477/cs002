@@ -16,9 +16,25 @@ namespace StringRep
         }
 
         // TODO: el metodo ToString genera una represenacion de string object
+        public override string ToString()
+        {
+            return $"Libro: {Name} por {Author}";
+        }
 
 
         // TODO: ToString puede ser overloaded para producir diferentes tipos de formatos
+        public string ToString(char format)
+        {
+            if (format == 'B')
+            {
+                return $"Libro: {Name}:{Author}";
+            }
+            if (format == 'F')
+            {
+                return $"Libro: {Name} by {Author} tiene {PageCount} paginas";
+            }
+            return ToString();
+        }
 
     }
 }
