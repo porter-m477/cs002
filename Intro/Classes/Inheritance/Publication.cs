@@ -42,6 +42,10 @@ namespace Inheritance
 
         // TODO: "virtual" keyword usada para indicar que un method
         // puede ser overridden por subclasses para personalizar comportamiento
+        public virtual string GetDescripcion()
+        {
+            return $"{Name}, {PageCount}";
+        }
 
     }
 }

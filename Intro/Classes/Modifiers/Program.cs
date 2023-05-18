@@ -14,6 +14,11 @@ namespace Modifiers
             Console.WriteLine(b1.GetDescription());
 
             // TODO: acceder a campos usando functions en lugar de directamente 
+            b1.SetName("Libro uno");
+            b1.SetAutor("autor dos");
+            b1.SetPages(343);
+
+            Console.WriteLine(b1.GetDescription());
 
         }
     }

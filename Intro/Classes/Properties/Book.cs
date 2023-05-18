@@ -20,9 +20,24 @@ namespace Properties
 
         // TODO: usar Properties para implementar acceso a datos internos
 
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
 
         // TODO: Forma abreviada de escribirlos utilizando el operador => 
         // para crear propiedades "expression-bodied" 
+        public string Autor
+        {
+            get => _author;
+            set => _author = value;
+        }
+        public int Paginas
+        {
+            get => _pagecount;
+            set => _pagecount = value;
+        }
 
 
     }
