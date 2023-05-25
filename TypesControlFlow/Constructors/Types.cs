@@ -11,13 +11,20 @@ public interface IPerson
 //classes - reference types
 public class Employee : IPerson
 {
-    public Employee(string firstName, string lastName,
-        int empId = 0)
+    // public Employee(){}
+    public Employee(string firstName, string lastName, int empId = 0)
     {
         LastName = lastName;
         FirstName = firstName;
         Id = empId;
     }
+    // public Employee(string firstName, string lastName,
+    //     int empId = 0)
+    // {
+    //     LastName = lastName;
+    //     FirstName = firstName;
+    //     Id = empId;
+    // }
     public string LastName { get; set; }
     public int Id { get; set; }
     public Age Age { get; set; }
@@ -28,6 +35,14 @@ public class Employee : IPerson
     public DateOnly StartDate { get; set; }
     public TimeOnly ShiftStartTime { get; set; }
 }
+
+// public class Manager : Employee, IPerson
+// {
+//     public Manager(string firstName, string lastName) : base("desconocido", "desconocido")
+//     {
+
+//     }
+// }
 
 public struct Age
 {

@@ -1,5 +1,6 @@
 ﻿
 using Galileo.Space;
 
-Employee e = new Employee("Matt", "Porter", 5);
-Console.WriteLine($"Nombre: {e.FirstName}, hello world");
+Employee e = new Employee("Matt", "Porter");
+Console.WriteLine($"{e.FirstName}, {e.LastName}, {e.Id}");
+

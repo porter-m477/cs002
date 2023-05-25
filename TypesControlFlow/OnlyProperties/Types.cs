@@ -78,6 +78,12 @@ public record Customer : IPerson
 
 public record PremiereCustomer : Customer
 {
+    public PremiereCustomer()
+    { }
+    public PremiereCustomer(byte level)
+    {
+        CustomerLevel = level;
+    }
     public byte CustomerLevel { get; init; }
 }
 
