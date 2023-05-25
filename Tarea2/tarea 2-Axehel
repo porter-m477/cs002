@@ -1,1 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Calculadoraa
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite un numero");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite un segundo numero");
+            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine("1) Suma\n2) Resta\n3) Multiplicacion\n4) Division");
+            int opcion = int .Parse(Console.ReadLine());
+            int sumaTotal, restaTotal, mulTotal, divTotal;
+            switch(opcion)
+            {
+                case 1: sumaTotal = x + y;
+                    Console.WriteLine("La suma de tus numeros es: {0}", sumaTotal);
+                    break;
+                 case 2: restaTotal = x - y;
+                    Console.WriteLine("La resta de tus numeros es: {0}", restaTotal);
+                    break;
+                case 3: mulTotal = x * y;
+                    Console.WriteLine("La multiplicacion de tus numeros es: {0}", mulTotal);
+                    break;
+                case 4: divTotal = x / y;
+                    Console.WriteLine("La division de tus numeros es : {0}", divTotal);
+                    break;
+            }
+        }
+    }
+}
 

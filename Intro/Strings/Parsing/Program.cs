@@ -18,26 +18,36 @@ namespace Parsing
             try
             {
                 // TODO: Intentar con data type integer
+                targetNum = int.Parse(numStr1);
+                Console.WriteLine(targetNum);
 
 
                 // TODO: Usar Parse con float number
+                targetNum = int.Parse(numStr2, NumberStyles.Float);
+                Console.WriteLine(targetNum);
 
 
                 // TODO: Usar Parse con thousands marker
+                targetNum = int.Parse(numStr3, NumberStyles.AllowThousands);
+                Console.WriteLine(targetNum);
 
 
                 // TODO: Usar Parse con thousands marker y decimal
+                targetNum = int.Parse(numStr4, NumberStyles.Float | NumberStyles.AllowThousands);
+                Console.WriteLine(targetNum);
 
 
                 // TODO: Usar con bool
+                Console.WriteLine($"{bool.Parse("False")}");
 
 
                 // TODO: Usar floating point numbers
+                Console.WriteLine($"{float.Parse("1.2345"):F2}");
 
             }
             catch
             {
-                Console.Write("Conversion failed");
+                Console.WriteLine("Conversion fallo ");
             }
 
             // TODO: El TryParse es similar pero maneja exceptions por nosotros
