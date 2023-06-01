@@ -8,5 +8,5 @@ due date: 31/05/2023
     - Incluir caracteres especiales
 - Organizar el codigo separando las clases en diferentes archivos
 
-- Utilizar el AI de google (como consejo)
+- Utilizar el AI de google (como recomendacion)
 https://bard.google.com/

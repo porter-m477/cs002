@@ -25,11 +25,11 @@ static void Structs()
     SPoint p1 = new SPoint { X = 7, Y = 3 };
     SPoint p2 = p1;
 
-    //Console.WriteLine($"P1 = P2: {p1 == p2}");
+    Console.WriteLine($"P1 = P2: {p1 == p2}");
 
     SPoint p3 = new SPoint { X = 7, Y = 3 };
 
-    //Console.WriteLine($"P1 = P3: {p1 == p3}");
+    Console.WriteLine($"P1 = P3: {p1 == p3}");
     Console.WriteLine();
 }
 

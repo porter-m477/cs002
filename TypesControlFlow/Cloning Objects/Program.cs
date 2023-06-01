@@ -1,8 +1,8 @@
 ﻿using Galileo.Space;
 
-Classes();
+// Classes();
 // Structs();
-// Records();
+Records();
 
 
 static void Classes()
@@ -19,11 +19,11 @@ static void Classes()
 
     //otras referencias
     IPerson other = me;
-    other.FirstName = "Sr. Matt";
+    other.FirstName = "Pedro";
     other.Age = new Age { BirthDate = new DateTime(1980, 9, 1), YearsOld = 39 };
 
     //resultados del objeto original
-    Console.WriteLine($"{me.FirstName} es {me.Age.YearsOld} pero {other.FirstName} es {other.Age.YearsOld}");
+    Console.WriteLine($"{me.FirstName} {me.LastName} es {me.Age.YearsOld} pero {other.FirstName} {other.LastName} es {other.Age.YearsOld}");
     Console.WriteLine();
 
     ChangeName(other);
@@ -32,6 +32,7 @@ static void Classes()
     Console.WriteLine();
 }
 
+// static void ChangeName(IPerson person)
 static void ChangeName(IPerson person)
 {
     person.LastName = "Desconocido";
@@ -44,7 +45,7 @@ static void ChangeName(IPerson person)
         new Age { BirthDate = new DateTime(1990, 1, 1), YearsOld = 31 }
     };
 
-    Console.WriteLine($"Persona despues del cambio de metodo es: {person.FirstName}");
+    Console.WriteLine($"Persona despues del cambio de metodo MANAGER es: {person.FirstName} {person.LastName}, {person.Age.YearsOld}");
 }
 static void Structs()
 {
@@ -57,7 +58,7 @@ static void Structs()
 
     Console.WriteLine($"Mi edad es: {myAge.YearsOld}, pero la cambiaria por: {anotherAge.YearsOld}");
 
-    AgeBackwords(ref anotherAge, 5);
+    AgeBackwords(ref anotherAge, 20);
 
     Console.WriteLine($"Ahora tengo {anotherAge.YearsOld} años de edad");
     Console.WriteLine();
@@ -69,19 +70,19 @@ static void Records()
 
     PremiereCustomer pc = new PremiereCustomer
     {
-        FirstName = "Cliente",
+        FirstName = "Andres",
         LastName = "Garcia",
         Id = 7,
         Age = new Age { BirthDate = DateTime.Now, YearsOld = 1 },
         CustomerLevel = 1
     };
 
-    PremiereCustomer pc2 = pc with { CustomerLevel = 2, LastName = "Morales" };
+    PremiereCustomer pc2 = pc with { CustomerLevel = 2, LastName = "Morales", FirstName = "Juan" };
 
-    Console.WriteLine($"{pc.FirstName} {pc.LastName} tiene el nivel {pc.CustomerLevel}");
-    Console.WriteLine($"{pc2.FirstName} {pc2.LastName} tiene el nivel {pc2.CustomerLevel}");
-    ChangeName((IPerson)pc);
-    Console.WriteLine($"{pc.FirstName} {pc.LastName} tiene {pc.Age.YearsOld} años de edad");
+    Console.WriteLine($"{pc.FirstName} {pc.LastName} tiene el nivel {pc.CustomerLevel} ID {pc.Id}");
+    Console.WriteLine($"{pc2.FirstName} {pc2.LastName} tiene el nivel {pc2.CustomerLevel} ID {pc2.Id}");
+    ChangeName((IPerson)pc2);
+    Console.WriteLine($"{pc2.FirstName} {pc2.LastName} tiene {pc.Age.YearsOld} años de edad");
 
 }
 
