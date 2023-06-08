@@ -1,5 +1,5 @@
-﻿using Galileo.Space;
+﻿// using Galileo.Space;
 //using System;
 
-string db = Constants.CONFIG_DB_NAME;
+string db = Galileo.Space.Constants.CONFIG_DB_NAME;
 Console.WriteLine(db);

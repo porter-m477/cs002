@@ -33,7 +33,7 @@ public abstract class Employee : IPerson
     //mostrar o esconder
     public bool IsActive()
     {
-        Console.WriteLine("Activo");
+        Console.WriteLine("Activo de IsActive");
         DateOnly current = DateOnly.FromDateTime(DateTime.Now);
         return current > StartDate && DateTime.Now < EndDate;
     }
@@ -51,7 +51,7 @@ public class ShiftWorker : Employee
     }
     public new bool IsActive()
     {
-        Console.WriteLine("activo");
+        Console.WriteLine("Activo de ShiftWorker");
         return false;
     }
 }
@@ -66,10 +66,10 @@ public class Manager : Employee, IPerson
         return true;
     }
 
-    public override void Terminate(DateTime terminationEffectiveDate)
+    public new void Terminate(DateTime terminationEffectiveDate)
     {
         //pasos para despedir
-        Console.WriteLine("supervisor despedido");
+        Console.WriteLine("Manager despedido");
 
         //optional
         base.Terminate(terminationEffectiveDate);
