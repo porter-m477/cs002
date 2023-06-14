@@ -12,7 +12,7 @@ namespace Passwords
             
             int longitud = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("-----------------------------");
-            NewPassword contra = new NewPassword(longitud, 'n', 'n', 'y');
+            NewPassword contra = new NewPassword(longitud, 'y', 'y', 'y');
             Console.WriteLine("-----------------------------");
         }
     }
