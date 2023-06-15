@@ -11,7 +11,7 @@ namespace RandomPasswordGenerator
             //RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
 
             // Create a string of all possible characters.
-            string characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+<,>.";
+            string characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
             // If numbers are allowed, add them to the string of possible characters.
             if (includeNumbers)
@@ -29,7 +29,7 @@ namespace RandomPasswordGenerator
             string password = "";
             for (int i = 0; i < length; i++)
             {
-                password += characters[rng.Next(1,length)];
+                password += characters[rng.Next(0,length)];
             }
 
             // Return the generated password.
